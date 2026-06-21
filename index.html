@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="3HK.XYZ 以第三方顧問視角，連接香港市場、內地企業與專業機構，協助跨境項目梳理路徑、協調資源與推進執行。"
+      content="3HK.XYZ 是面向香港市場、內地企業與第三方顧問協調的財務顧問服務網站，協助跨境項目梳理路徑、協調專業機構與推進執行。"
     />
     <title>3HK.XYZ｜香港金融的三維座標</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -20,7 +20,7 @@
           <span class="brand-mark">3</span>
           <span>
             <strong>3HK.XYZ</strong>
-            <small>香港跨境顧問平台</small>
+            <small>香港跨境財務顧問</small>
           </span>
         </a>
 
@@ -32,10 +32,10 @@
         </button>
 
         <nav class="site-nav" id="site-nav" data-nav>
+          <a href="#coordinate">座標模型</a>
           <a href="#positioning">第三方定位</a>
-          <a href="#coordinate">XYZ座標</a>
           <a href="#ecosystem">專業生態</a>
-          <a href="#services">服務範圍</a>
+          <a href="#method">執行方法</a>
           <a href="#membership">會員方案</a>
           <a class="nav-cta" href="#contact">預約溝通</a>
         </nav>
@@ -44,16 +44,13 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-copy reveal">
             <p class="eyebrow">3HK.XYZ｜香港金融的三維座標</p>
-            <h1 id="hero-title">香港市場、內地企業與第三方顧問的座標系統</h1>
-            <p class="hero-axis-line">X：香港市場｜Y：內地企業｜Z：第三方顧問</p>
+            <h1 id="hero-title">把香港市場、內地企業與第三方顧問放進同一套座標</h1>
             <p class="hero-lede">
-              以第三方視角，協助企業梳理香港市場進入路徑、專業機構協同與跨境項目執行。
-            </p>
-            <p class="hero-text">
-              3HK.XYZ 不把自己包裝成持牌金融機構，而是作為項目前期判斷、專業資源協調與執行陪跑的第三方顧問，讓跨境對接更清晰、更克制、更可落地。
+              面向跨境項目的財務顧問服務，協助企業判斷香港市場路徑、協調專業機構，並把資源對接推進到可執行節點。
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#contact">
@@ -64,103 +61,130 @@
               </a>
               <a class="button button-secondary" href="#membership">查看會員方案</a>
             </div>
+            <div class="hero-tags" aria-label="服務重點">
+              <span>項目診斷</span>
+              <span>香港路徑</span>
+              <span>專業協調</span>
+              <span>執行陪跑</span>
+            </div>
           </div>
 
-          <div class="hero-diagram reveal" aria-label="3HK.XYZ 三維座標模型">
-            <svg viewBox="0 0 720 520" role="img" aria-labelledby="diagram-title diagram-desc">
+          <div class="coordinate-terminal reveal" aria-label="3HK.XYZ 三維座標視覺">
+            <div class="terminal-top">
+              <span>3HK COORDINATE MAP</span>
+              <span>XYZ</span>
+            </div>
+            <svg class="coordinate-visual" viewBox="0 0 720 540" role="img" aria-labelledby="diagram-title diagram-desc">
               <title id="diagram-title">3HK.XYZ 三維座標模型</title>
-              <desc id="diagram-desc">X軸代表香港市場，Y軸代表內地企業，Z軸代表第三方顧問。</desc>
+              <desc id="diagram-desc">X軸代表香港市場，Y軸代表內地企業，Z軸代表第三方顧問執行。</desc>
               <defs>
-                <linearGradient id="planeGradient" x1="0" x2="1" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#eef4f2" stop-opacity="0.18" />
-                  <stop offset="100%" stop-color="#f5efe6" stop-opacity="0.06" />
+                <linearGradient id="axisBlue" x1="0" x2="1" y1="0" y2="0">
+                  <stop offset="0%" stop-color="#74a9bd" />
+                  <stop offset="100%" stop-color="#d1e5eb" />
                 </linearGradient>
-                <linearGradient id="axisX" x1="0" x2="1" y1="0" y2="0">
-                  <stop offset="0%" stop-color="#5a8fa6" />
-                  <stop offset="100%" stop-color="#93bfd1" />
+                <linearGradient id="axisGreen" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#65b7a3" />
+                  <stop offset="100%" stop-color="#1f786c" />
                 </linearGradient>
-                <linearGradient id="axisY" x1="0" x2="1" y1="0" y2="1">
-                  <stop offset="0%" stop-color="#64a995" />
-                  <stop offset="100%" stop-color="#1d766d" />
+                <linearGradient id="axisPlum" x1="0" x2="0" y1="1" y2="0">
+                  <stop offset="0%" stop-color="#88617a" />
+                  <stop offset="100%" stop-color="#dbc0cd" />
                 </linearGradient>
-                <linearGradient id="axisZ" x1="0" x2="0" y1="1" y2="0">
-                  <stop offset="0%" stop-color="#9b6a7d" />
-                  <stop offset="100%" stop-color="#c79caf" />
+                <linearGradient id="surfaceFill" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04" />
                 </linearGradient>
-                <filter id="axisShadow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#0e2230" flood-opacity="0.2" />
+                <filter id="softAxisShadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#081621" flood-opacity="0.28" />
                 </filter>
-                <marker id="arrowX" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                  <path d="M0 0 10 5 0 10Z" fill="#93bfd1" />
+                <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                  <path d="M0 0 10 5 0 10Z" fill="#d1e5eb" />
                 </marker>
-                <marker id="arrowY" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                  <path d="M0 0 10 5 0 10Z" fill="#1d766d" />
+                <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                  <path d="M0 0 10 5 0 10Z" fill="#1f786c" />
                 </marker>
-                <marker id="arrowZ" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
-                  <path d="M0 0 10 5 0 10Z" fill="#c79caf" />
+                <marker id="arrowPlum" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+                  <path d="M0 0 10 5 0 10Z" fill="#dbc0cd" />
                 </marker>
               </defs>
 
-              <polygon class="svg-plane" points="120,334 390,176 650,256 376,418" />
-              <g class="svg-grid">
-                <path d="M166 307 432 151" />
-                <path d="M213 333 479 177" />
-                <path d="M260 359 526 203" />
-                <path d="M307 385 573 229" />
-                <path d="M354 411 620 255" />
-                <path d="M174 304 442 386" />
-                <path d="M218 278 486 360" />
-                <path d="M262 252 530 334" />
-                <path d="M306 226 574 308" />
-                <path d="M350 200 618 282" />
+              <polygon class="surface" points="112,345 382,176 652,258 374,430" />
+              <g class="surface-grid">
+                <path d="M158 318 428 150" />
+                <path d="M204 344 474 176" />
+                <path d="M250 370 520 202" />
+                <path d="M296 396 566 228" />
+                <path d="M342 422 612 254" />
+                <path d="M166 312 444 398" />
+                <path d="M211 284 489 370" />
+                <path d="M256 256 534 342" />
+                <path d="M301 228 579 314" />
+                <path d="M346 200 624 286" />
               </g>
 
-              <g class="svg-axes" filter="url(#axisShadow)">
-                <path class="svg-axis axis-x" marker-end="url(#arrowX)" d="M260 338 606 250" />
-                <path class="svg-axis axis-y" marker-end="url(#arrowY)" d="M260 338 150 216" />
-                <path class="svg-axis axis-z" marker-end="url(#arrowZ)" d="M360 304 360 112" />
+              <g class="axes" filter="url(#softAxisShadow)">
+                <path class="axis axis-x" marker-end="url(#arrowBlue)" d="M258 348 612 252" />
+                <path class="axis axis-y" marker-end="url(#arrowGreen)" d="M258 348 144 219" />
+                <path class="axis axis-z" marker-end="url(#arrowPlum)" d="M360 314 360 110" />
               </g>
 
-              <g class="svg-nodes">
-                <circle class="node node-x" cx="606" cy="250" r="17" />
-                <circle class="node node-y" cx="150" cy="216" r="17" />
-                <circle class="node node-z" cx="360" cy="112" r="17" />
-                <rect class="node-origin" x="309" y="260" width="102" height="78" rx="6" />
-                <text class="origin-main" x="360" y="299" text-anchor="middle">3</text>
-                <text class="origin-sub" x="360" y="320" text-anchor="middle">第三方</text>
+              <g class="coordinate-nodes">
+                <circle class="node node-x" cx="612" cy="252" r="17" />
+                <circle class="node node-y" cx="144" cy="219" r="17" />
+                <circle class="node node-z" cx="360" cy="110" r="17" />
+                <rect class="origin-box" x="307" y="269" width="106" height="82" rx="6" />
+                <text class="origin-number" x="360" y="310" text-anchor="middle">3</text>
+                <text class="origin-label" x="360" y="332" text-anchor="middle">第三方顧問</text>
               </g>
 
-              <g class="svg-labels">
-                <text x="606" y="216" text-anchor="middle">X 香港市場</text>
-                <text x="133" y="183" text-anchor="middle">Y 內地企業</text>
-                <text x="360" y="80" text-anchor="middle">Z 顧問執行</text>
+              <g class="diagram-labels">
+                <text x="612" y="218" text-anchor="middle">X 香港市場</text>
+                <text x="126" y="186" text-anchor="middle">Y 內地企業</text>
+                <text x="360" y="78" text-anchor="middle">Z 顧問執行</text>
               </g>
             </svg>
+            <div class="terminal-foot">
+              <div>
+                <strong>X</strong>
+                <span>香港市場入口</span>
+              </div>
+              <div>
+                <strong>Y</strong>
+                <span>內地企業價值</span>
+              </div>
+              <div>
+                <strong>Z</strong>
+                <span>第三方顧問執行</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="axis-strip" id="coordinate" aria-labelledby="coordinate-title">
-        <div class="container">
-          <div class="section-heading narrow reveal">
-            <p class="section-kicker">XYZ座標</p>
-            <h2 id="coordinate-title">把資源對接轉化為清晰座標</h2>
+      <section class="coordinate-section" id="coordinate" aria-labelledby="coordinate-title">
+        <div class="container coordinate-layout">
+          <div class="section-heading reveal">
+            <p class="section-kicker">座標模型</p>
+            <h2 id="coordinate-title">從“有資源”升級為“有座標”</h2>
+            <p>
+              資源本身不會自動形成交易。3HK.XYZ 用 X、Y、Z 三軸整理市場入口、企業價值與顧問執行，讓每一次對接都圍繞目標、邊界和下一步展開。
+            </p>
           </div>
           <div class="axis-grid">
             <article class="axis-card reveal">
               <span>X</span>
               <h3>香港市場</h3>
-              <p>金融機構、上市公司、創科平台、律師、會計師、稅務與審計等專業場景。</p>
+              <p>金融機構、上市公司、創科平台、法律、會計、稅務、審計與專業服務場景。</p>
             </article>
             <article class="axis-card reveal">
               <span>Y</span>
               <h3>內地企業</h3>
-              <p>項目資產、產業資源、出海需求、融資節奏與跨境增長計劃。</p>
+              <p>項目資產、產業資源、出海需求、融資節奏、增長敘事與跨境落地訴求。</p>
             </article>
             <article class="axis-card reveal">
               <span>Z</span>
               <h3>第三方顧問</h3>
-              <p>路徑判斷、資料整理、專業協調、會議推進與節點管理。</p>
+              <p>項目診斷、路徑梳理、資料優化、專業協調、會議推進與節點管理。</p>
             </article>
           </div>
         </div>
@@ -170,27 +194,27 @@
         <div class="container split-layout">
           <div class="section-copy reveal">
             <p class="section-kicker">第三方定位</p>
-            <h2 id="positioning-title">“3” 代表第三方顧問，而不是金融牌照承諾</h2>
+            <h2 id="positioning-title">“3” 代表第三方顧問，不代表持牌金融服務承諾</h2>
             <p>
-              3HK 的價值在於中立判斷和項目協調：先看企業是否適合進入香港市場，再整理路徑、材料與合適的專業機構。涉及證券、投資建議、資產管理或其他需持牌活動，應由合資格持牌機構處理。
+              3HK.XYZ 專注於跨境項目前期判斷、專業資源協調與執行陪跑。涉及證券、資產管理、牌照申請、法律、審計、稅務或其他需持牌活動的部分，應由合資格持牌機構或專業人士提供。
             </p>
           </div>
 
-          <div class="principle-grid">
-            <article class="principle-card reveal">
+          <div class="stance-grid">
+            <article class="stance-card reveal">
               <span>01</span>
-              <h3>第三方視角</h3>
-              <p>不替單一資源方作保，先幫企業釐清目標、條件、風險和可行路徑。</p>
+              <h3>中立判斷</h3>
+              <p>先判斷項目是否適合香港市場，再梳理應該對接哪些專業資源。</p>
             </article>
-            <article class="principle-card reveal">
+            <article class="stance-card reveal">
               <span>02</span>
-              <h3>第三方協調</h3>
-              <p>把企業、香港專業機構、資本或產業方放在同一個溝通框架內。</p>
+              <h3>結構表達</h3>
+              <p>把商業模式、資產狀況、資金需求和合規邊界整理成香港語境能理解的材料。</p>
             </article>
-            <article class="principle-card reveal">
+            <article class="stance-card reveal">
               <span>03</span>
-              <h3>第三層執行</h3>
-              <p>從初步判斷進入材料、會議、時間表和關鍵節點，讓項目不止停留在介紹。</p>
+              <h3>節點推進</h3>
+              <p>管理會議、材料、反饋與下一步安排，降低跨境溝通中的信息差。</p>
             </article>
           </div>
         </div>
@@ -200,9 +224,9 @@
         <div class="container">
           <div class="section-heading reveal">
             <p class="section-kicker">專業生態</p>
-            <h2 id="ecosystem-title">香港專業機構與大灣區連接能力</h2>
+            <h2 id="ecosystem-title">香港專業機構與大灣區資源的連接語境</h2>
             <p>
-              我們圍繞香港創科、法律、會計、稅務、上市公司和大灣區產業資源，為項目建立更清晰的專業語境。這是資源協調能力，不代表任何機構授權、合作或官方推薦。
+              3HK.XYZ 圍繞香港創科、法律、會計、審計、稅務、上市公司與大灣區產業場景，協助項目進入合適的專業討論框架。以下為資源協調方向，不代表任何機構授權、合作或官方推薦。
             </p>
           </div>
 
@@ -210,77 +234,75 @@
             <article class="ecosystem-card reveal">
               <span>創科平台</span>
               <h3>數碼港與科技園場景</h3>
-              <p>面向金融科技、人工智能、數字資產、實物資產代幣化、硬科技與企業出海項目，梳理香港落地和展示場景。</p>
+              <p>面向金融科技、人工智能、數字資產、實物資產代幣化、硬科技與企業出海項目。</p>
             </article>
             <article class="ecosystem-card reveal">
               <span>專業服務</span>
               <h3>會計、審計與稅務</h3>
-              <p>協同香港會計、審計、估值、稅務與控股架構資源，提升項目材料的專業可讀性。</p>
+              <p>協同香港會計、審計、估值、稅務和控股架構資源，提升項目材料可讀性。</p>
             </article>
             <article class="ecosystem-card reveal">
               <span>法律合規</span>
               <h3>律師與文件協調</h3>
-              <p>圍繞交易文件、主體架構、合規邊界和專業意見，協調合適的法律及合規資源。</p>
+              <p>圍繞交易文件、主體架構、合規邊界和專業意見，協調合適的法律資源。</p>
             </article>
             <article class="ecosystem-card reveal">
               <span>資本場景</span>
               <h3>上市公司與產業資源</h3>
-              <p>面向港股上市公司、產業投資、併購合作與投資者關係，建立可討論的項目入口。</p>
+              <p>面向港股上市公司、產業投資、併購合作與投資者關係，建立可討論入口。</p>
             </article>
             <article class="ecosystem-card reveal">
               <span>灣區網絡</span>
               <h3>粵港澳大灣區連接</h3>
-              <p>聯動深圳、廣州、珠海、佛山、東莞等產業場景，讓內地資產更容易進入香港語境。</p>
+              <p>聯動深圳、廣州、珠海、佛山、東莞等產業場景，對齊香港市場語境。</p>
             </article>
             <article class="ecosystem-card reveal emphasis">
               <span>服務邊界</span>
               <h3>不替代持牌或專業意見</h3>
-              <p>法律、審計、稅務、牌照及受監管金融活動由相應專業人士或持牌機構提供。</p>
+              <p>受監管金融活動、法律、審計、稅務與牌照服務由相應專業機構承接。</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section services-section" id="services" aria-labelledby="services-title">
-        <div class="container split-layout reverse">
-          <div class="service-panel reveal" aria-label="服務流程">
-            <div>
-              <span>01</span>
-              <strong>診斷</strong>
-              <p>確認企業階段、資產類型、香港市場目標與合規邊界。</p>
-            </div>
-            <div>
-              <span>02</span>
-              <strong>定位</strong>
-              <p>把 X、Y、Z 三軸整理成可討論的項目路徑。</p>
-            </div>
-            <div>
-              <span>03</span>
-              <strong>協調</strong>
-              <p>安排合適的專業機構、產業資源與資本場景對接。</p>
-            </div>
-            <div>
-              <span>04</span>
-              <strong>推進</strong>
-              <p>陪跑材料、會議、反饋、時間表與下一步執行。</p>
-            </div>
+      <section class="method-section" id="method" aria-labelledby="method-title">
+        <div class="container method-layout">
+          <div class="section-heading reveal">
+            <p class="section-kicker">執行方法</p>
+            <h2 id="method-title">把跨境財務諮詢拆成四個可管理節點</h2>
           </div>
-
-          <div class="section-copy reveal">
-            <p class="section-kicker">服務範圍</p>
-            <h2 id="services-title">少一點口號，多一點可執行的項目工作</h2>
-            <p>
-              3HK.XYZ 專注於跨境項目前期梳理、香港專業資源協調、項目材料優化和執行節點管理。需要持牌、法律、審計、稅務或投資建議的部分，由相應專業機構承接。
-            </p>
+          <div class="method-timeline">
+            <article class="method-step reveal">
+              <span>01</span>
+              <h3>項目診斷</h3>
+              <p>確認企業階段、資產類型、香港市場目標、時間表與合規邊界。</p>
+            </article>
+            <article class="method-step reveal">
+              <span>02</span>
+              <h3>座標定位</h3>
+              <p>把 X、Y、Z 三軸整理為路徑圖，明確應先接觸哪些專業資源。</p>
+            </article>
+            <article class="method-step reveal">
+              <span>03</span>
+              <h3>材料與會議</h3>
+              <p>優化項目材料，安排關鍵溝通，協助雙方在同一語境下討論。</p>
+            </article>
+            <article class="method-step reveal">
+              <span>04</span>
+              <h3>節點陪跑</h3>
+              <p>跟進反饋、下一步、專業機構協同與年度顧問服務節奏。</p>
+            </article>
           </div>
         </div>
       </section>
 
       <section class="section membership-section" id="membership" aria-labelledby="membership-title">
         <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-kicker">會員方案</p>
-            <h2 id="membership-title">三檔年度顧問會員</h2>
+          <div class="pricing-head reveal">
+            <div>
+              <p class="section-kicker">會員方案</p>
+              <h2 id="membership-title">三檔年度顧問會員</h2>
+            </div>
             <p>以 HKD 計價，按企業階段配置顧問溝通、資源協調與年度陪跑深度。</p>
           </div>
 
@@ -332,7 +354,7 @@
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="container contact-inner reveal">
+        <div class="container contact-panel reveal">
           <p class="section-kicker">聯絡我們</p>
           <h2 id="contact-title">先做一次清晰的項目判斷</h2>
           <p>
@@ -357,7 +379,7 @@
           <span class="brand-mark">3</span>
           <span>
             <strong>3HK.XYZ</strong>
-            <small>香港跨境顧問平台</small>
+            <small>香港跨境財務顧問</small>
           </span>
         </a>
         <p>© <span data-year></span> 3HK.XYZ。保留所有權利。</p>
