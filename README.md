@@ -4,13 +4,13 @@ Static source for `3hk.xyz`.
 
 ## Brand Language
 
-3HK.XYZ｜Professional Third-Party FA Advisory
+3HK.XYZ｜The 3D Coordinates of Hong Kong Finance
 
 3 = Professional Third-Party Advisor
 
 X：Hong Kong Market｜Y：Mainland Enterprise｜Z：FA Advisory
 
-以专业第三方FA顾问为核心，连接香港市场、内地企业与顾问执行能力，构建跨境资本交易坐标。
+以独立第三方FA顾问为核心，连接香港市场、内地企业与顾问执行能力，构建跨境资本交易坐标。
 
 ## Membership Plans
 
