@@ -149,13 +149,16 @@ body.nav-open .site-header {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 16px;
+  flex-wrap: nowrap;
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .site-nav a {
@@ -172,26 +175,26 @@ body.nav-open .site-header {
 }
 
 .language-switch {
-  min-height: 36px;
+  min-height: 28px;
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
-  padding: 3px;
+  padding: 2px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  box-shadow: 0 10px 24px rgba(50, 72, 88, 0.08);
+  box-shadow: none;
 }
 
 .language-switch a {
-  min-width: 38px;
+  min-width: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: var(--slate);
   border-radius: 6px;
   text-decoration: none;
-  font-size: 12px;
-  font-weight: 860;
+  font-size: 10px;
+  font-weight: 820;
 }
 
 .language-switch a.is-active {
