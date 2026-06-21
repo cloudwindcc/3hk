@@ -12,6 +12,8 @@ X：Hong Kong Market｜Y：Mainland Enterprise｜Z：FA Advisory
 
 以獨立第三方FA顧問為核心，連接香港市場、內地企業與顧問執行能力，構建跨境資本交易座標。
 
+願景：成為香港連接中國大陸的最專業獨立 FA。
+
 ## Membership Plans
 
 - 基礎會員：HKD 18,000 / 年
