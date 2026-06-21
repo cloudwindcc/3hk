@@ -272,6 +272,153 @@ body.nav-open .nav-toggle {
     linear-gradient(to top, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.42)) 0 100% / 100% 2px no-repeat;
 }
 
+.coordinate-model {
+  position: absolute;
+  right: calc((100vw - var(--max)) / 2 - 260px);
+  top: 17%;
+  width: min(600px, 46vw);
+  aspect-ratio: 1.08;
+  transform: perspective(980px) rotateX(58deg) rotateZ(-37deg);
+  transform-style: preserve-3d;
+  opacity: 0.94;
+}
+
+.model-plane {
+  position: absolute;
+  inset: 14%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 44px 44px;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.36);
+}
+
+.model-plane::before {
+  content: "";
+  position: absolute;
+  inset: 22% 18% 18% 22%;
+  border: 1px solid rgba(198, 161, 91, 0.28);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.axis-line {
+  position: absolute;
+  left: 22%;
+  top: 64%;
+  height: 2px;
+  transform-origin: left center;
+}
+
+.axis-line-x {
+  width: 62%;
+  background: linear-gradient(90deg, var(--gold), rgba(255, 255, 255, 0.24));
+}
+
+.axis-line-y {
+  width: 53%;
+  transform: rotate(90deg);
+  background: linear-gradient(90deg, var(--jade), rgba(255, 255, 255, 0.24));
+}
+
+.axis-line-z {
+  left: 48%;
+  width: 44%;
+  transform: rotate(-48deg);
+  background: linear-gradient(90deg, var(--copper), rgba(255, 255, 255, 0.24));
+}
+
+.axis-dot {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.08), 0 16px 36px rgba(0, 0, 0, 0.32);
+}
+
+.origin-dot {
+  left: 44%;
+  top: 51%;
+  width: 72px;
+  height: 72px;
+  color: var(--ink);
+  background: linear-gradient(135deg, var(--gold), #eedba6);
+  transform: translateZ(78px);
+}
+
+.origin-dot strong,
+.origin-dot em {
+  display: block;
+  line-height: 1;
+}
+
+.origin-dot strong {
+  font-size: 28px;
+}
+
+.origin-dot em {
+  margin-top: 3px;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.x-dot {
+  left: 78%;
+  top: 59%;
+  background: var(--gold);
+}
+
+.y-dot {
+  left: 18%;
+  top: 19%;
+  background: var(--jade);
+  color: var(--white);
+}
+
+.z-dot {
+  left: 68%;
+  top: 27%;
+  background: var(--copper);
+  color: var(--white);
+}
+
+.axis-tag {
+  position: absolute;
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  color: var(--white);
+  background: rgba(7, 17, 15, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 11px;
+  font-weight: 850;
+  white-space: nowrap;
+  transform: rotateZ(37deg) rotateX(-58deg);
+}
+
+.tag-x {
+  left: 60%;
+  top: 72%;
+}
+
+.tag-y {
+  left: 2%;
+  top: 14%;
+}
+
+.tag-z {
+  left: 60%;
+  top: 14%;
+}
+
 .coordinate-plane {
   position: absolute;
   right: calc((100vw - var(--max)) / 2 - 150px);
@@ -614,11 +761,12 @@ body.nav-open .nav-toggle {
   min-height: 430px;
   border: 1px solid var(--line);
   background:
-    linear-gradient(rgba(7, 17, 15, 0.065) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(7, 17, 15, 0.065) 1px, transparent 1px),
-    linear-gradient(135deg, rgba(15, 139, 111, 0.16), rgba(198, 161, 91, 0.14));
+    linear-gradient(rgba(7, 17, 15, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 17, 15, 0.055) 1px, transparent 1px),
+    linear-gradient(135deg, rgba(15, 139, 111, 0.14), rgba(198, 161, 91, 0.13));
   background-size: 44px 44px, 44px 44px, auto;
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .coordinate-card::before,
@@ -708,11 +856,130 @@ body.nav-open .nav-toggle {
   color: var(--ink);
 }
 
+.diagram-3d {
+  position: absolute;
+  inset: 7%;
+  transform: perspective(920px) rotateX(57deg) rotateZ(-34deg);
+  transform-style: preserve-3d;
+}
+
+.diagram-plane {
+  position: absolute;
+  inset: 14% 10%;
+  border: 1px solid rgba(7, 17, 15, 0.2);
+  background-image:
+    linear-gradient(rgba(7, 17, 15, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(7, 17, 15, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.diagram-axis {
+  position: absolute;
+  left: 20%;
+  top: 64%;
+  height: 3px;
+  transform-origin: left center;
+}
+
+.diagram-x {
+  width: 66%;
+  background: var(--gold);
+}
+
+.diagram-y {
+  width: 56%;
+  transform: rotate(90deg);
+  background: var(--jade);
+}
+
+.diagram-z {
+  left: 50%;
+  width: 46%;
+  transform: rotate(-49deg);
+  background: var(--copper);
+}
+
+.diagram-node {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: var(--white);
+  background: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 14px 34px rgba(7, 17, 15, 0.24);
+}
+
+.diagram-origin {
+  left: 42%;
+  top: 48%;
+  width: 88px;
+  height: 88px;
+  color: var(--ink);
+  background: var(--gold);
+  transform: translateZ(72px);
+}
+
+.diagram-node-x {
+  left: 82%;
+  top: 58%;
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.diagram-node-y {
+  left: 16%;
+  top: 17%;
+  background: var(--jade-dark);
+}
+
+.diagram-node-z {
+  left: 69%;
+  top: 21%;
+  background: var(--copper);
+}
+
+.diagram-label {
+  position: absolute;
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(7, 17, 15, 0.12);
+  font-size: 11px;
+  font-weight: 850;
+  white-space: nowrap;
+  transform: rotateZ(34deg) rotateX(-57deg);
+}
+
+.label-market {
+  left: 58%;
+  top: 74%;
+}
+
+.label-mainland {
+  left: 0;
+  top: 13%;
+}
+
+.label-advisory {
+  left: 60%;
+  top: 10%;
+}
+
+.third-party-section,
 .services-section,
 .advisors-section {
   background: var(--white);
 }
 
+.principle-grid,
+.backing-grid,
 .service-grid,
 .advisor-grid {
   display: grid;
@@ -720,10 +987,20 @@ body.nav-open .nav-toggle {
   gap: 18px;
 }
 
+.principle-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.backing-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .service-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.principle-card,
+.backing-card,
 .service-card,
 .advisor-card,
 .plan-card,
@@ -732,6 +1009,8 @@ body.nav-open .nav-toggle {
   background: var(--white);
 }
 
+.principle-card,
+.backing-card,
 .service-card,
 .advisor-card {
   min-height: 238px;
@@ -739,6 +1018,8 @@ body.nav-open .nav-toggle {
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
+.principle-card:hover,
+.backing-card:hover,
 .service-card:hover,
 .advisor-card:hover,
 .plan-card:hover,
@@ -762,6 +1043,8 @@ body.nav-open .nav-toggle {
 
 .service-card h3,
 .advisor-card h3,
+.principle-card h3,
+.backing-card h3,
 .plan-card h3,
 .process-step h3 {
   margin: 24px 0 10px;
@@ -772,11 +1055,40 @@ body.nav-open .nav-toggle {
 
 .service-card p,
 .advisor-card p,
+.principle-card p,
+.backing-card p,
 .plan-card p,
 .process-step p {
   margin: 0;
   color: var(--muted);
   font-size: 14px;
+}
+
+.principle-card span,
+.backing-card span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  color: var(--ink);
+  background: var(--mint);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.02em;
+}
+
+.backing-section {
+  background: var(--paper);
+}
+
+.backing-card {
+  min-height: 214px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.backing-card:nth-child(5),
+.backing-card:nth-child(6) {
+  background: var(--white);
 }
 
 .process-section {
@@ -867,8 +1179,31 @@ body.nav-open .nav-toggle {
   font-size: 28px;
 }
 
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0 0 16px;
+}
+
+.plan-price strong {
+  color: var(--gold);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.plan-price span {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.featured .plan-price span {
+  color: rgba(255, 255, 255, 0.62);
+}
+
 .plan-desc {
-  min-height: 68px;
+  min-height: 92px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--line);
 }
@@ -916,6 +1251,12 @@ body.nav-open .nav-toggle {
 .plan-card:not(.featured) a {
   background: var(--ink);
   color: var(--white);
+}
+
+.pricing-note {
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .advisor-card {
@@ -1053,11 +1394,19 @@ body.nav-open .nav-toggle {
     opacity: 0.55;
   }
 
+  .coordinate-model {
+    right: -120px;
+    width: 600px;
+    opacity: 0.48;
+  }
+
   .hero-copy {
     width: min(680px, 100%);
   }
 
   .axis-grid,
+  .principle-grid,
+  .backing-grid,
   .service-grid,
   .process-grid,
   .plan-grid,
@@ -1148,7 +1497,16 @@ body.nav-open .nav-toggle {
     opacity: 0.34;
   }
 
-  .label {
+  .coordinate-model {
+    top: 9%;
+    right: -250px;
+    width: 560px;
+    opacity: 0.28;
+  }
+
+  .label,
+  .axis-tag,
+  .diagram-label {
     display: none;
   }
 
@@ -1169,12 +1527,24 @@ body.nav-open .nav-toggle {
     width: 116px;
   }
 
+  .diagram-3d {
+    inset: 4%;
+  }
+
+  .diagram-origin {
+    width: 72px;
+    height: 72px;
+    left: 38%;
+  }
+
   .point-center {
     left: 35%;
   }
 
   .service-card,
   .advisor-card,
+  .principle-card,
+  .backing-card,
   .plan-card,
   .process-step,
   .axis-grid article {
@@ -1217,5 +1587,14 @@ body.nav-open .nav-toggle {
 
   .point-center {
     left: 33%;
+  }
+
+  .origin-dot {
+    width: 58px;
+    height: 58px;
+  }
+
+  .origin-dot strong {
+    font-size: 23px;
   }
 }
