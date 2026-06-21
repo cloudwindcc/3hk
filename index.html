@@ -31,14 +31,20 @@
           <span class="sr-only">打開導航</span>
         </button>
 
-        <nav class="site-nav" id="site-nav" data-nav>
-          <a href="#coordinate">座標模型</a>
-          <a href="#positioning">第三方定位</a>
-          <a href="#ecosystem">專業生態</a>
-          <a href="#method">執行方法</a>
-          <a href="#membership">會員方案</a>
-          <a class="nav-cta" href="#contact">預約溝通</a>
-        </nav>
+        <div class="nav-actions">
+          <nav class="site-nav" id="site-nav" data-nav>
+            <a href="#coordinate">座標模型</a>
+            <a href="#positioning">第三方定位</a>
+            <a href="#ecosystem">專業生態</a>
+            <a href="#method">執行方法</a>
+            <a href="#membership">會員方案</a>
+            <a class="nav-cta" href="#contact">預約溝通</a>
+          </nav>
+          <div class="language-switch" aria-label="語言切換">
+            <a class="is-active" href="index.html" aria-current="page">繁</a>
+            <a href="en.html">EN</a>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -361,7 +367,7 @@
             如果你正在評估香港市場、專業機構協同、大灣區資源或跨境項目落地，3HK.XYZ 可以先幫你把方向、邊界和下一步整理清楚。
           </p>
           <div class="contact-actions">
-            <a class="button button-primary" href="mailto:contact@3hk.xyz?subject=3HK.XYZ%20Project%20Inquiry">
+            <a class="button button-primary" href="mailto:info@3hk.xyz?subject=3HK.XYZ%20Project%20Inquiry">
               <span>發送項目需求</span>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h12m-5-5 5 5-5 5" />
@@ -374,15 +380,28 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <a class="brand" href="#top" aria-label="3HK.XYZ 首頁">
-          <span class="brand-mark">3</span>
-          <span>
-            <strong>3HK.XYZ</strong>
-            <small>香港跨境財務顧問</small>
-          </span>
-        </a>
-        <p>© <span data-year></span> 3HK.XYZ。保留所有權利。</p>
+      <div class="container footer-stack">
+        <div class="footer-inner">
+          <a class="brand" href="#top" aria-label="3HK.XYZ 首頁">
+            <span class="brand-mark">3</span>
+            <span>
+              <strong>3HK.XYZ</strong>
+              <small>香港跨境財務顧問</small>
+            </span>
+          </a>
+          <div class="footer-contact" aria-label="聯絡資訊">
+            <strong>聯絡我們</strong>
+            <a href="mailto:info@3hk.xyz">info@3hk.xyz</a>
+            <span>聯絡地址：香港數碼港</span>
+          </div>
+        </div>
+        <div class="footer-disclaimer">
+          <strong>專業免責聲明</strong>
+          <p>
+            3HK.XYZ 提供第三方財務顧問、項目診斷、路徑梳理與專業資源協調服務，網站內容僅供一般資訊參考，不構成證券、投資、法律、稅務、審計、牌照申請或任何受監管金融活動之建議、要約或承諾。涉及持牌金融服務、法律、審計、稅務及其他專業意見，應由合資格持牌機構或專業人士獨立提供。
+          </p>
+        </div>
+        <p class="footer-copyright">© <span data-year></span> 3HK.XYZ。保留所有權利。</p>
       </div>
     </footer>
 

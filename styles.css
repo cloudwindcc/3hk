@@ -152,6 +152,12 @@ body.nav-open .site-header {
   gap: 18px;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .site-nav a {
   color: rgba(36, 51, 66, 0.72);
   text-decoration: none;
@@ -180,6 +186,34 @@ body.nav-open .site-header {
 .site-nav .nav-cta:hover {
   color: var(--surface);
   background: #267871;
+}
+
+.language-switch {
+  min-height: 36px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 24px rgba(50, 72, 88, 0.08);
+}
+
+.language-switch a {
+  min-width: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slate);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 860;
+}
+
+.language-switch a.is-active {
+  color: var(--surface);
+  background: var(--teal);
 }
 
 .nav-toggle {
@@ -815,6 +849,11 @@ body.nav-open .site-header {
   border-top: 1px solid var(--line);
 }
 
+.footer-stack {
+  display: grid;
+  gap: 22px;
+}
+
 .footer-inner {
   display: flex;
   align-items: center;
@@ -822,10 +861,50 @@ body.nav-open .site-header {
   gap: 24px;
 }
 
-.site-footer p {
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-contact strong {
+  color: var(--ink);
+}
+
+.footer-contact a {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 760;
+}
+
+.footer-disclaimer {
+  padding: 18px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.footer-disclaimer strong {
+  display: block;
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.footer-disclaimer p,
+.footer-copyright {
   margin: 0;
   color: var(--muted);
   font-size: 13px;
+}
+
+.footer-disclaimer p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.72;
 }
 
 .reveal {
@@ -881,6 +960,10 @@ body.nav-open .site-header {
     transition: opacity 180ms ease, transform 180ms ease, visibility 180ms ease;
   }
 
+  .nav-actions {
+    gap: 10px;
+  }
+
   body.nav-open .site-nav {
     opacity: 1;
     visibility: visible;
@@ -897,6 +980,10 @@ body.nav-open .site-header {
 
   .site-nav .nav-cta {
     margin-top: 6px;
+  }
+
+  .language-switch {
+    flex: 0 0 auto;
   }
 
   .hero-grid {
@@ -1038,5 +1125,11 @@ body.nav-open .site-header {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-contact {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
