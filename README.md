@@ -1,32 +1,23 @@
-# 3HK.XYZ Landing Page
+# 3HK.XYZ
 
-Static source for `3hk.xyz`.
+3HK.XYZ 是面向香港市場、內地企業與第三方顧問協調的靜態網站。
 
-## Brand Language
+## 品牌語言
 
-3HK.XYZ｜The 3D Coordinates of Hong Kong Finance
+3HK.XYZ｜香港金融的三維座標
 
-3 = Professional Third-Party Advisor
+- X：香港市場
+- Y：內地企業
+- Z：第三方顧問
 
-X：Hong Kong Market｜Y：Mainland Enterprise｜Z：FA Advisory
+以第三方顧問視角，協助企業梳理香港市場進入路徑、專業機構協同與跨境項目執行。
 
-以獨立第三方FA顧問為核心，連接香港市場、內地企業與顧問執行能力，構建跨境資本交易座標。
-
-願景：成為香港連接中國大陸的最專業獨立 FA。
-
-## Membership Plans
+## 會員方案
 
 - 基礎會員：HKD 18,000 / 年
 - 高級會員：HKD 28,000 / 年
-- 年度VIP會員：HKD 88,000 / 年
+- 年度尊享會員：HKD 88,000 / 年
 
-## Files
+## 部署
 
-- `index.html` - page structure and content
-- `styles.css` - responsive visual design
-- `script.js` - mobile navigation, scroll state and reveal animation
-- `favicon.svg` - browser icon
-
-## Deploy
-
-Push these files to the root of a GitHub repository and enable GitHub Pages from the default branch.
+本項目為純靜態頁面，可直接部署到 Cloudflare Pages、GitHub Pages 或其他靜態托管服務。
