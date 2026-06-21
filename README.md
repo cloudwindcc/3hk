@@ -10,13 +10,13 @@ Static source for `3hk.xyz`.
 
 X：Hong Kong Market｜Y：Mainland Enterprise｜Z：FA Advisory
 
-以独立第三方FA顾问为核心，连接香港市场、内地企业与顾问执行能力，构建跨境资本交易坐标。
+以獨立第三方FA顧問為核心，連接香港市場、內地企業與顧問執行能力，構建跨境資本交易座標。
 
 ## Membership Plans
 
-- 基础会员：¥18,000 / 年
-- 高级会员：¥28,000 / 年
-- 年度VIP会员：¥88,000 / 年
+- 基礎會員：HKD 18,000 / 年
+- 高級會員：HKD 28,000 / 年
+- 年度VIP會員：HKD 88,000 / 年
 
 ## Files
 

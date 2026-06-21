@@ -536,7 +536,12 @@ body.nav-open .nav-toggle {
 }
 
 .section {
+  scroll-margin-top: 88px;
   padding: 106px 0;
+}
+
+.contact-section {
+  scroll-margin-top: 88px;
 }
 
 .section-heading {
@@ -833,15 +838,17 @@ body.nav-open .nav-toggle {
 
 .plan-price {
   display: flex;
-  align-items: baseline;
-  gap: 6px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 4px 8px;
   margin: 0 0 16px;
 }
 
 .plan-price strong {
   color: var(--champagne);
-  font-size: 36px;
+  font-size: clamp(29px, 3vw, 36px);
   line-height: 1;
+  white-space: nowrap;
 }
 
 .plan-price span {
@@ -909,6 +916,36 @@ body.nav-open .nav-toggle {
   margin: 22px 0 0;
   color: var(--muted);
   font-size: 13px;
+}
+
+.stripe-pricing-shell {
+  scroll-margin-top: 88px;
+  margin-top: 56px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+
+.stripe-pricing-heading {
+  width: min(680px, 100%);
+  margin-bottom: 24px;
+}
+
+.stripe-pricing-heading h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(26px, 3.2vw, 40px);
+  line-height: 1.15;
+}
+
+.stripe-pricing-heading p:not(.section-kicker) {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+stripe-pricing-table {
+  display: block;
+  width: 100%;
 }
 
 .contact-section {
