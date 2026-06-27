@@ -18,6 +18,17 @@
 - 高級會員：HKD 28,000 / 年
 - 年度 VIP 會員：HKD 88,000 / 年
 
+## 搜尋入口
+
+- 简体中文首页：`/zh-cn/`
+- 香港公司设立：`/zh-cn/hong-kong-company-setup/`
+- 香港上市与二次上市：`/zh-cn/hong-kong-listing/`
+- 香港融资 FA 顾问：`/zh-cn/hong-kong-financing/`
+- 大湾区企业投资香港：`/zh-cn/greater-bay-area-hong-kong/`
+- 常见问题：`/zh-cn/faq/`
+
+站点包含 `sitemap.xml`、`robots.txt`、`llms.txt` 和 Cloudflare Pages `_headers`。
+
 ## 部署
 
 本項目為純靜態頁面，可直接部署到 Cloudflare Pages、GitHub Pages 或其他靜態托管服務。

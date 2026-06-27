@@ -3,11 +3,34 @@
   <url>
     <loc>https://3hk.xyz/</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://3hk.xyz/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://3hk.xyz/zh-cn/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://3hk.xyz/en.html" />
   </url>
   <url>
     <loc>https://3hk.xyz/en.html</loc>
     <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://3hk.xyz/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://3hk.xyz/zh-cn/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://3hk.xyz/en.html" />
+  </url>
+  <url>
+    <loc>https://3hk.xyz/zh-cn/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://3hk.xyz/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://3hk.xyz/zh-cn/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://3hk.xyz/en.html" />
+  </url>
+  <url>
+    <loc>https://3hk.xyz/zh-cn/hong-kong-company-setup/</loc>
+  </url>
+  <url>
+    <loc>https://3hk.xyz/zh-cn/hong-kong-listing/</loc>
+  </url>
+  <url>
+    <loc>https://3hk.xyz/zh-cn/hong-kong-financing/</loc>
+  </url>
+  <url>
+    <loc>https://3hk.xyz/zh-cn/greater-bay-area-hong-kong/</loc>
+  </url>
+  <url>
+    <loc>https://3hk.xyz/zh-cn/faq/</loc>
   </url>
 </urlset>
