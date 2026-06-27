@@ -31,7 +31,9 @@
 - Simplified Chinese homepage: https://3hk.xyz/zh-cn/
 - English homepage: https://3hk.xyz/en.html
 - Hong Kong company setup: https://3hk.xyz/zh-cn/hong-kong-company-setup/
+- Hong Kong subsidiary setup: https://3hk.xyz/zh-cn/hong-kong-subsidiary/
 - Hong Kong listing and secondary listing: https://3hk.xyz/zh-cn/hong-kong-listing/
+- Hong Kong secondary listing: https://3hk.xyz/zh-cn/hong-kong-secondary-listing/
 - Hong Kong financing and FA advisory: https://3hk.xyz/zh-cn/hong-kong-financing/
 - Greater Bay Area and Hong Kong investment: https://3hk.xyz/zh-cn/greater-bay-area-hong-kong/
 - FAQ: https://3hk.xyz/zh-cn/faq/

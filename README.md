@@ -22,7 +22,9 @@
 
 - 简体中文首页：`/zh-cn/`
 - 香港公司设立：`/zh-cn/hong-kong-company-setup/`
+- 香港子公司设立：`/zh-cn/hong-kong-subsidiary/`
 - 香港上市与二次上市：`/zh-cn/hong-kong-listing/`
+- 香港二次上市：`/zh-cn/hong-kong-secondary-listing/`
 - 香港融资 FA 顾问：`/zh-cn/hong-kong-financing/`
 - 大湾区企业投资香港：`/zh-cn/greater-bay-area-hong-kong/`
 - 常见问题：`/zh-cn/faq/`
