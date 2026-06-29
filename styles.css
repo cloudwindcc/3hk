@@ -536,6 +536,11 @@ body.nav-open .site-header {
   background: var(--bg);
 }
 
+.positioning-section {
+  padding-top: 48px;
+  padding-bottom: 56px;
+}
+
 .section-heading {
   width: min(760px, 100%);
   margin-bottom: 30px;
@@ -674,6 +679,11 @@ body.nav-open .site-header {
   align-items: start;
 }
 
+.positioning-section .split-layout {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
 .section-copy {
   min-width: 0;
   padding: 28px;
@@ -683,8 +693,36 @@ body.nav-open .site-header {
   box-shadow: var(--shadow-soft);
 }
 
+.positioning-section .section-copy {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.42fr) minmax(0, 1fr);
+  column-gap: 42px;
+  row-gap: 8px;
+  align-items: center;
+  padding: 32px 38px;
+}
+
+.positioning-section .section-copy .section-kicker,
+.positioning-section .section-copy h2 {
+  grid-column: 1;
+}
+
+.positioning-section .section-copy p:not(.section-kicker) {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin-top: 0;
+}
+
 .stance-grid {
   grid-template-columns: 1fr;
+}
+
+.positioning-section .stance-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.positioning-section .stance-card {
+  min-height: 190px;
 }
 
 .ecosystem-card.emphasis,
@@ -1248,6 +1286,25 @@ body.nav-open .site-header {
 
   .method-timeline {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .positioning-section .section-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .positioning-section .section-copy .section-kicker,
+  .positioning-section .section-copy h2,
+  .positioning-section .section-copy p:not(.section-kicker) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .positioning-section .section-copy p:not(.section-kicker) {
+    margin-top: 16px;
+  }
+
+  .positioning-section .stance-grid {
+    grid-template-columns: 1fr;
   }
 
   .fa-stage:nth-child(3n)::after {
